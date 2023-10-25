@@ -1,0 +1,23 @@
+{
+  "name": "spikesim",
+  "version": "1.0.0",
+  "description": "Strategize for FRC competitions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo SpikeSim",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohanmishr/SpikeSim.git"
+  },
+  "author": "@rohanmishr, @IncbomDev, @PillageDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohanmishr/SpikeSim/issues"
+  },
+  "homepage": "https://github.com/rohanmishr/SpikeSim#readme",
+  "devDependencies": {
+    "electron": "^27.0.2"
+  }
+}

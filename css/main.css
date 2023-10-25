@@ -1,0 +1,151 @@
+:root {
+    --ui-bg-color: #2c2c2c;
+    --ui-accent-color: #3a3a3a;
+    --ui-border-color: #5a5a5a;
+    --ui-hover-color: rgba(255, 255, 255, 0.1);
+    --ui-text-color: rgb(180, 180, 180);
+    --font: 'Roboto', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    color: var(--ui-text-color);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#properties {
+    width: 23vw;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--ui-bg-color);
+    border-right: 3px solid var(--ui-border-color);
+}
+
+#field {
+    width: 54vw;
+    height: 100vh;
+    display: inline-flex;
+    > #field-main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+}
+
+#explorer {
+    width: 23vw;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--ui-bg-color);
+    border-left: 3px solid var(--ui-border-color);
+}
+
+#explorer-add {
+    background-color: var(--ui-accent-color);
+    width: 30%;
+    height: 10vh;
+    display: none;
+    flex-direction: column;
+    margin-left: 0.5vh;
+    margin-top: 0.5vh;
+    border: 1px solid var(--ui-border-color);
+    > input {
+        background-color: var(--ui-bg-color);
+        border: none;
+        border-bottom: 1px solid var(--ui-border-color);
+    }
+}
+
+.explorer-add-type {
+    background-color: transparent;
+    border: none;
+    color: var(--ui-text-color);
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.explorer-add-type:hover {
+    background-color: var(--ui-hover-color);
+}
+
+.explorer-entity {
+    display: flex;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: transparent;
+    height: 2vh;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.explorer-entity:hover {
+    background-color: var(--ui-hover-color);
+    cursor: pointer;
+}
+
+.tab-header {
+    background-color: var(--ui-accent-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    > h3 {
+        font-weight: 1;
+        font-size: 1em;
+    }
+}
+
+.search {
+    background-color: var(--ui-bg-color);
+    color: gray;
+    border: 2px solid rgb(37, 37, 37);
+    user-select: none;
+}
+
+.add-btn {
+    border: 1px solid var(--ui-border-color);
+    border-radius: 10%;
+    font-size: 1vw;
+    color: var(--ui-border-color);
+    background-color: transparent;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-left: 0.5vh;
+    margin-top: 0.5vh;
+}
+
+.add-btn:hover {
+    background-color: var(--ui-hover-color);
+}
+
+.property {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 2vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-bottom: 1px solid var(--ui-border-color);
+    > input {
+        background-color: transparent;
+        border-bottom: 1px solid var(--ui-border-color);
+        color: white;
+        text-align: center;
+        width: 20%;
+    }
+}

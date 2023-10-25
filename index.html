@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>SpikeSim</title>
+    </head>
+    <body>
+        <main>
+            <!-- In properties you can edit the values and... properties of objects in the simulation. -->
+            <div id="properties">
+                <div class="tab-header">
+                    <h3>Properties</h3>
+                </div>
+                <input class="search" type="text" placeholder="Search...">
+                <div id="properties-values">
+
+                </div>
+            </div>
+
+            <!-- the actual field. -->
+            <div id="field">
+                <canvas id="field-main" width="540" height="700">
+
+                </canvas>
+            </div>
+
+            <!-- The explorer is where you can see all the entities contained in the workspace. -->
+            <div id="explorer">
+                <div class="tab-header">
+                    <h3>Explorer</h3>
+                </div>
+                <input class="search" type="text" placeholder="Search...">
+                <div id="explorer-entities">
+
+                </div>
+                <button class="add-btn">&plus;</button>
+                <div id="explorer-add">
+                    <input placeholder="Search...">
+                    <button class="explorer-add-type">Robot</button>
+                    <button class="explorer-add-type">Piece</button>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="src/Constants.js"></script>
+    <script src="src/Classes.js"></script>
+    <script src="src/Handlers.js"></script>
+    <script src="src/Main.js"></script>
+</html>
